@@ -17,7 +17,18 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  var i = 0;
+  bag = [];
+  if(cart == 0) {
+    return `Your shopping cart is empty.`
+  }
+  else {
+    while(i < cart.length) {
+      bag.push(` ` + cart[i].item + ' at $'+ cart[i].price);
+      i++;
+    }
+  }
+  return `In your cart, you have ${bag}.`
 }
 
 function total() {
