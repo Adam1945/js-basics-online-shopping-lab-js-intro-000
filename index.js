@@ -23,12 +23,12 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   }
   else {
-    while(i < cart.length) {
-      bag.push(` ` + cart[i].item + ' at $'+ cart[i].price + ' and ');
-      i++;
+    for(var i = 0; i < cart.length; i++) {
+      for(item in cart[i]) {
+        bag.push(item + " at $" + cart[i][item])
+      }
     }
-  }
-  console.log(`In your cart, you have ${bag.join(' ')}.`);
+    console.log("In your cart, you have " + bag.join(", ") + ".");
 }
 
 function total() {
