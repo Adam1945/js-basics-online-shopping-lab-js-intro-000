@@ -18,7 +18,7 @@ function addToCart(item) {
 
 function viewCart() {
   var i = 0;
-  bag = [];
+  var bag = [];
   if(cart == 0) {
     return `Your shopping cart is empty.`
   }
