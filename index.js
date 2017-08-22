@@ -29,6 +29,7 @@ function viewCart() {
       }
     }
     console.log("In your cart, you have " + bag.join(", ") + ".");
+  }
 }
 
 function total() {
