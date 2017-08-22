@@ -28,7 +28,7 @@ function viewCart() {
       i++;
     }
   }
-  return `In your cart, you have ${bag}.`
+  return `In your cart, you have ${bag.join('')}.`
 }
 
 function total() {
