@@ -20,7 +20,7 @@ function viewCart() {
   var i = 0;
   var bag = [];
   if(cart == 0) {
-    return `Your shopping cart is empty.`
+    return "Your shopping cart is empty."
   }
   else {
     while(i < cart.length) {
