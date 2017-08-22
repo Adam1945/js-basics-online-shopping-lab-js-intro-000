@@ -17,11 +17,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var bag = [];
+  
   if(cart.length == 0) {
     console.log("Your shopping cart is empty.");
   }
   else {
+    var bag = [];
     for(var i = 0; i < cart.length; i++) {
       for(item in cart[i]) {
         bag.push(item + " at $" + cart[i][item])
