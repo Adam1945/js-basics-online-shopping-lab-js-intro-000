@@ -24,7 +24,7 @@ function viewCart() {
   else {
     var itemsAndPrices = []
 
-    for (let i = 0; i < cart.length; i++) {
+    for (var i = 0; i < cart.length; i++) {
       var itemAndPrice = cart[i]
       var item = Object.keys(itemAndPrice)[0]
       var price = itemAndPrice[item]
