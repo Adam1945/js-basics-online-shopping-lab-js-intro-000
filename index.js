@@ -22,11 +22,15 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   }
   else {
-    var items = [];
-    for (var i = 0; i < cart.length; i++) {
-      items.push(cart[i] + " at $" + cart[i].price)
+    var itemsAndPrices = []
+
+    for (let i = 0; i < l; i++) {
+      var itemAndPrice = cart[i]
+      var item = Object.keys(itemAndPrice)[0]
+      var price = itemAndPrice[item]
+      itemsAndPrices.push(`${item} at \$${price}`)
     }
-    console.log("In your cart, you have " + items.join(",") + " .");
+    console.log(`In your cart, you have ${itemsAndPrices.join(', ')}.`)
   }
 }
 
